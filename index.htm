@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="The largest collection of Hello World programs on the Internet.">
 <meta name="author" content="Wolfram Rösler">
-<meta name="date" content="2017-01-14T12:14:10+0100">
+<meta name="date" content="2017-01-22T13:27:16+0100">
 <title>The Hello World Collection</title>
 <link rel="canonical" href="http://helloworldcollection.de">
 <link href="sharingbuttons.css" rel="stylesheet">
@@ -105,6 +105,7 @@
 <a href="#Assembler-X8">Assembler-X8</a><br>
 <a href="#Assembler-z390">Assembler-z390</a><br>
 <a href="#Assembler-Z80-Console">Assembler-Z80-Console</a><br>
+<b><a href="#Assembler-Z80-CP&#47;M">Assembler-Z80-CP&#47;M</a><br></b>
 <a href="#Assembler-ZX81">Assembler-ZX81</a><br>
 <a href="#Asterisk">Asterisk</a><br>
 <a href="#ATS">ATS</a><br>
@@ -636,7 +637,7 @@ where it read like this:</p>
 </p>
 <p>Since then, Hello World has been implemented in just about
 every programming language on the planet. This collection includes
-<b>     555 Hello World programs</b>
+<b>     556 Hello World programs</b>
 in as many more-or-less well known programming languages, plus
 <b>      76 <a href="#Human">human</a> languages</b>.</p>
 <p>The programs in this collection are intended to be as minimal as
@@ -657,7 +658,7 @@ Begin your contribution with a comment in the respective language.
 Click <a href="#links">here</a> for related links.<br>
 Click <a href="#history">here</a> for brief history of the Hello World Collection.<br>
 Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exclusive <a href="https://www.freewear.org/?org=HelloWorld">Hello World merchandise</a> &mdash; T-shirts, mugs and more!</p>
-<p>Last update: Jan 14, 2017.</p>
+<p>Last update: Jan 22, 2017.</p>
 <div style="text-align:center"><!-- Sharing Buttons created with http://sharingbuttons.io -->
 
 <!-- Sharingbutton Facebook -->
@@ -842,6 +843,7 @@ Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exc
 <a href="#Assembler-X8">Assembler-X8</a>&nbsp;
 <a href="#Assembler-z390">Assembler-z390</a>&nbsp;
 <a href="#Assembler-Z80-Console">Assembler-Z80-Console</a>&nbsp;
+<a href="#Assembler-Z80-CP&#47;M"><b>Assembler-Z80-CP&#47;M</b></a>&nbsp;
 <a href="#Assembler-ZX81">Assembler-ZX81</a>&nbsp;
 <a href="#Asterisk">Asterisk</a>&nbsp;
 <a href="#ATS">ATS</a>&nbsp;
@@ -2715,6 +2717,23 @@ DEFB %01101000
 DEFB %00000000
 chars_end:
 </pre>
+<a name="Assembler-Z80-CP&#47;M"></a>
+<table width="100%"><tr>
+<td><h2>Assembler-Z80-CP&#47;M</h2></td>
+<td align="right" width="1%"><small><a href="#index">Back&nbsp;to&nbsp;index</a></small></td>
+</tr></table>
+<pre>; Hello world in <a href="https://en.wikipedia.org/wiki/Zilog_Z80">Z80</a> <a href="https://en.wikipedia.org/wiki/Assembly_language">Assembly</a> for <a href="https://en.wikipedia.org/wiki/CP/M">CP/M</a>
+
+BDOS    equ     05h
+WRTLINE equ     09h
+;
+        org     0100h
+        lxi     d,sHello
+        mvi     c,WRTLINE
+        call    BDOS
+        ret
+;
+sHello  db      'Hello, World!'</pre>
 <a name="Assembler-ZX81"></a>
 <table width="100%"><tr>
 <td><h2>Assembler-ZX81</h2></td>
@@ -10466,6 +10485,7 @@ Wolfram R&ouml;sler: Founder and maintainer of the Collection
  &mdash; /u/farias0: Portugol
  &mdash; Dave Kilroy: LiveCode
  &mdash; Leon (Yinliang) Wu: SAS
+ &mdash; Marco Pontello: Z80 Assembly for CP/M
 </p>
 <p>Programs were taken from these Internet sources:</p>
 <p style="font-size:xx-small;font-style:italic;">
