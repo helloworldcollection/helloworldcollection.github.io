@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="The largest collection of Hello World programs on the Internet.">
 <meta name="author" content="Wolfram Roesler">
-<meta name="date" content="2017-04-02T10:23:57+0200">
+<meta name="date" content="2017-04-02T10:44:19+0200">
 <title>The Hello World Collection</title>
 <link rel="canonical" href="http://helloworldcollection.de">
 <link href="sharingbuttons.css" rel="stylesheet">
@@ -563,7 +563,7 @@
 <a href="#Thue">Thue</a><br>
 <a href="#TI&nbsp;BASIC">TI&nbsp;BASIC</a><br>
 <a href="#TI&nbsp;Extended&nbsp;BASIC">TI&nbsp;Extended&nbsp;BASIC</a><br>
-<a href="#TI-59">TI-59</a><br>
+<b><a href="#TI-59">TI-59</a><br></b>
 <a href="#TI-8x">TI-8x</a><br>
 <a href="#TinyFugue">TinyFugue</a><br>
 <a href="#Tk">Tk</a><br>
@@ -1311,7 +1311,7 @@ Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exc
 <a href="#Thue">Thue</a>&nbsp;
 <a href="#TI&nbsp;BASIC">TI&nbsp;BASIC</a>&nbsp;
 <a href="#TI&nbsp;Extended&nbsp;BASIC">TI&nbsp;Extended&nbsp;BASIC</a>&nbsp;
-<a href="#TI-59">TI-59</a>&nbsp;
+<a href="#TI-59"><b>TI-59</b></a>&nbsp;
 <a href="#TI-8x">TI-8x</a>&nbsp;
 <a href="#TinyFugue">TinyFugue</a>&nbsp;
 <a href="#Tk">Tk</a>&nbsp;
@@ -9249,40 +9249,22 @@ a</pre>
 <td><h2>TI-59</h2></td>
 <td align="right" width="1%"><small><a href="#index">Back&nbsp;to&nbsp;index</a></small></td>
 </tr></table>
+<p>Hello world for the <a href="https://en.wikipedia.org/wiki/TI-59">TI-59</a> with thermo printer.
+Comments are not part of the source code (not entered).</p>
 <pre>
-Hello World for the TI-59 with PC-100C thermo printer.
-No comment character exists.
-
-The TI-59/PC-100C can print up to 20 characters per line (upper case
-only). They are coded as 2-digit decimal numbers (see manual for
-details) in up to four print registers (of five characters each)
-and then printed.
-Before entering the program, press LRN to switch into learn mode.
-After entering the program, cancel learn mode with LRN, turn on the
-printer, and run the program with A.
-A pleasant sound, and what a font! Real TRUE-TYPE!
-
-The output looks like this:
-
-      +--------------------+
-      |        HELLO WORLD!|
-      |                    |
-      +--------------------+
-
-
-      TI59 Code   Comment
+      Code        Comment
 
       LBL A       Start of program: label A
       OP 00       Clear the four print registers
       23          "H"
-      OP 02       Write into print register 2
       17          "E"
+      OP 02       Write into print register 2
       27          "L"
       27          "L"
       32          "O"
       00          " "
-      OP 03       Write into print register 3
       43          "W"
+      OP 03       Write into print register 3
       32          "O"
       35          "R"
       27          "L"
@@ -10177,7 +10159,7 @@ Wolfram R&ouml;sler: Founder and maintainer of the Collection
  &mdash; Wolfgang Houben: PDP-11 Assembler
  &mdash; Pascal Costanza: Oberon (Oberon OS)
  &mdash; Martin Oefelein: Sather, GynkoSoft
- &mdash; Ralf Unland: TI-59
+ &mdash; Ralf Unland, Claudio Larini: TI-59
  &mdash; Dan Sanders: English translation of TI-59 program
  &mdash; Stefan Rupp: Java
  &mdash; Werner Huber: Informix 4GL
