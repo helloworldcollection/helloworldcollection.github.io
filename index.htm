@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="The largest collection of Hello World programs on the Internet.">
 <meta name="author" content="Wolfram Roesler">
-<meta name="date" content="2018-02-17T12:57:15+0100">
+<meta name="date" content="2018-03-17T12:40:46+0100">
 <title>The Hello World Collection</title>
 <link rel="canonical" href="http://helloworldcollection.de">
 <link href="sharingbuttons.css" rel="stylesheet">
@@ -290,7 +290,7 @@
 <a href="#HQ9+">HQ9+</a><br>
 <a href="#HTML">HTML</a><br>
 <a href="#Hubot">Hubot</a><br>
-<b><a href="#Human">Human</a><br></b>
+<a href="#Human">Human</a><br>
 <a href="#HyperTalk">HyperTalk</a><br>
 <br><span class="cap">I</span><br>
 <a href="#IBM-Exec">IBM-Exec</a><br>
@@ -539,7 +539,8 @@
 <a href="#Snobol">Snobol</a><br>
 <a href="#Spin">Spin</a><br>
 <a href="#Spiral">Spiral</a><br>
-<a href="#SPL">SPL</a><br>
+<a href="#SPL4">SPL4</a><br>
+<b><a href="#Splunk&nbsp;SPL">Splunk&nbsp;SPL</a><br></b>
 <a href="#Spry">Spry</a><br>
 <a href="#SPSS">SPSS</a><br>
 <a href="#SQL&nbsp;(Advantage)">SQL&nbsp;(Advantage)</a><br>
@@ -655,7 +656,7 @@ where it read like this:</p>
 </p>
 <p>Since then, Hello World has been implemented in just about
 every programming language on the planet. This collection includes
-<b>     573 Hello World programs</b>
+<b>     574 Hello World programs</b>
 in as many more-or-less well known programming languages, plus
 <b>      77 <a href="#Human">human</a> languages</b>.</p>
 <p>The programs in this collection are intended to be as minimal as
@@ -676,7 +677,7 @@ Begin your contribution with a comment in the respective language.
 Click <a href="#links">here</a> for related links.<br>
 Click <a href="#history">here</a> for brief history of the Hello World Collection.<br>
 Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exclusive <a href="https://www.freewear.org/?org=HelloWorld">Hello World merchandise</a> &mdash; T-shirts, mugs and more!</p>
-<p>Last update: Feb 17, 2018.</p>
+<p>Last update: Mar 17, 2018.</p>
 <div style="text-align:center">
 	<!-- Sharing Buttons created with http://sharingbuttons.io -->
 
@@ -1050,7 +1051,7 @@ Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exc
 <a href="#HQ9+">HQ9+</a>&nbsp;
 <a href="#HTML">HTML</a>&nbsp;
 <a href="#Hubot">Hubot</a>&nbsp;
-<a href="#Human"><b>Human</b></a>&nbsp;
+<a href="#Human">Human</a>&nbsp;
 <a href="#HyperTalk">HyperTalk</a>&nbsp;
 <br><span class="cap">I </span>
 <a href="#IBM-Exec">IBM-Exec</a>&nbsp;
@@ -1299,7 +1300,8 @@ Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exc
 <a href="#Snobol">Snobol</a>&nbsp;
 <a href="#Spin">Spin</a>&nbsp;
 <a href="#Spiral">Spiral</a>&nbsp;
-<a href="#SPL">SPL</a>&nbsp;
+<a href="#SPL4">SPL4</a>&nbsp;
+<a href="#Splunk&nbsp;SPL"><b>Splunk&nbsp;SPL</b></a>&nbsp;
 <a href="#Spry">Spry</a>&nbsp;
 <a href="#SPSS">SPSS</a>&nbsp;
 <a href="#SQL&nbsp;(Advantage)">SQL&nbsp;(Advantage)</a>&nbsp;
@@ -8998,9 +9000,9 @@ v * * *   *     *   * 2      * o      **   v*
 ** * **   **   *v   * * * *  *     *  *  ***
  *****     *v^**    *** ***  *******  **** 
 </pre>
-<a name="SPL"></a>
+<a name="SPL4"></a>
 <table width="100%"><tr>
-<td><h2>SPL</h2></td>
+<td><h2>SPL4</h2></td>
 <td align="right" width="1%"><small><a href="#index">Back&nbsp;to&nbsp;index</a></small></td>
 </tr></table>
 <pre>
@@ -9015,6 +9017,12 @@ v * * *   *     *   * 2      * o      **   v*
 *
  END HELLO;
 </pre>
+<a name="Splunk&nbsp;SPL"></a>
+<table width="100%"><tr>
+<td><h2>Splunk&nbsp;SPL</h2></td>
+<td align="right" width="1%"><small><a href="#index">Back&nbsp;to&nbsp;index</a></small></td>
+</tr></table>
+<pre>| makeresults `comment("Hello world in <a href="https://en.wikipedia.org/wiki/Splunk">Splunk</a> <a href="http://docs.splunk.com/Documentation/Splunk/7.0.2/Search/Aboutthesearchlanguage">SPL</a>")` | eval mystring="Hello, World!"</pre>
 <a name="Spry"></a>
 <table width="100%"><tr>
 <td><h2>Spry</h2></td>
@@ -10271,7 +10279,7 @@ Wolfram R&ouml;sler: Founder and maintainer of the Collection
  &mdash; Michael Glaesner: Perl, awk
  &mdash; Peter Gummer: Eiffel
  &mdash; Markus Omers: Presentation Manager
- &mdash; Thomas Dorner: SPL
+ &mdash; Thomas Dorner: SPL4
  &mdash; Jochen Kunz: Rexx (window version), HP-48
  &mdash; Sascha Bendinger: Dylan
  &mdash; Steffen Pohlen: Visual Basic, Gofer (dialog)
@@ -10689,6 +10697,7 @@ Wolfram R&ouml;sler: Founder and maintainer of the Collection
  &mdash; LegionMammal978: Lojban
  &mdash; Ahmed Abdalla: Noor
  &mdash; Joel Bryan Juliano: Bato
+ &mdash; Chris Huryn: Splunk SPL
 </p>
 <p>Programs were taken from these Internet sources:</p>
 <p style="font-size:xx-small;font-style:italic;">
@@ -10943,7 +10952,7 @@ on 27-Dec-2015.</p>
 <p>The Collection is administered as a bunch of text files which
 are compiled into this single HTML file by a bash script, originally
 written for Linux, then used under Cygwin on Windows, now run on
-an iMac on macOS. Its social media buttons are made with <a target="_blank"
+macOS. Its social media buttons are made with <a target="_blank"
 href="http://sharingbuttons.io">http://sharingbuttons.io</a> and thus respect
 users' privacy.</p>
 <p>By the way, this site is the original Hello World Collection.
