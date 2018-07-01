@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="The largest collection of Hello World programs on the Internet.">
 <meta name="author" content="Wolfram Roesler">
-<meta name="date" content="2018-06-09T13:12:45+0200">
+<meta name="date" content="2018-07-01T16:28:24+0200">
 <title>The Hello World Collection</title>
 <link rel="canonical" href="http://helloworldcollection.de">
 <link href="sharingbuttons.css" rel="stylesheet">
@@ -101,6 +101,7 @@
 <a href="#Assembler&nbsp;(PDP-8)">Assembler&nbsp;(PDP-8)</a><br>
 <a href="#Assembler&nbsp;(PPC,&nbsp;Darwin)">Assembler&nbsp;(PPC,&nbsp;Darwin)</a><br>
 <a href="#Assembler&nbsp;(SPARC)">Assembler&nbsp;(SPARC)</a><br>
+<b><a href="#Assembler&nbsp;(TAS)">Assembler&nbsp;(TAS)</a><br></b>
 <a href="#Assembler&nbsp;(VP)">Assembler&nbsp;(VP)</a><br>
 <a href="#Assembler&nbsp;(Win32)">Assembler&nbsp;(Win32)</a><br>
 <a href="#Assembler&nbsp;(X1)">Assembler&nbsp;(X1)</a><br>
@@ -663,7 +664,7 @@ where it read like this:</p>
 </p>
 <p>Since then, Hello World has been implemented in just about
 every programming language on the planet. This collection includes
-<b>     581 Hello World programs</b>
+<b>     582 Hello World programs</b>
 in as many more-or-less well known programming languages, plus
 <b>      78 <a href="#Human">human</a> languages</b>.</p>
 <p>The programs in this collection are intended to be as minimal as
@@ -684,7 +685,7 @@ Begin your contribution with a comment in the respective language.
 Click <a href="#links">here</a> for related links.<br>
 Click <a href="#history">here</a> for brief history of the Hello World Collection.<br>
 Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exclusive <a href="https://www.freewear.org/?org=HelloWorld">Hello World merchandise</a> &mdash; T-shirts, mugs and more!</p>
-<p>Last update: Jun 09, 2018.</p>
+<p>Last update: Jul 01, 2018.</p>
 <div style="text-align:center">
 	<!-- Sharing Buttons created with http://sharingbuttons.io -->
 
@@ -869,6 +870,7 @@ Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exc
 <a href="#Assembler&nbsp;(PDP-8)">Assembler&nbsp;(PDP-8)</a>&nbsp;
 <a href="#Assembler&nbsp;(PPC,&nbsp;Darwin)">Assembler&nbsp;(PPC,&nbsp;Darwin)</a>&nbsp;
 <a href="#Assembler&nbsp;(SPARC)">Assembler&nbsp;(SPARC)</a>&nbsp;
+<a href="#Assembler&nbsp;(TAS)"><b>Assembler&nbsp;(TAS)</b></a>&nbsp;
 <a href="#Assembler&nbsp;(VP)">Assembler&nbsp;(VP)</a>&nbsp;
 <a href="#Assembler&nbsp;(Win32)">Assembler&nbsp;(Win32)</a>&nbsp;
 <a href="#Assembler&nbsp;(X1)">Assembler&nbsp;(X1)</a>&nbsp;
@@ -2412,6 +2414,19 @@ main:
 	call  printf,1
 	nop
 	restore</pre>
+<a name="Assembler&nbsp;(TAS)"></a>
+<table width="100%"><tr>
+<td><h2>Assembler&nbsp;(TAS)</h2></td>
+<td align="right" width="1%"><small><a href="#index">Back&nbsp;to&nbsp;index</a></small></td>
+</tr></table>
+<pre>-- Hello world in TAS Assembler for the <a href="https://de.wikipedia.org/wiki/TR_440">TR 440</a>
+
+HELLO.=SEGM,XBA VB616, SSR 6 16,
+FB616=R&amp;ENDE,
+ 
+VB616=FB616/AG, 3/H, TEXT/AG, 3/H,
+TEXT=''*020Hello World !'',
+ENDE,</pre>
 <a name="Assembler&nbsp;(VP)"></a>
 <table width="100%"><tr>
 <td><h2>Assembler&nbsp;(VP)</h2></td>
@@ -10796,6 +10811,7 @@ Wolfram R&ouml;sler: Founder and maintainer of the Collection
  &mdash; Fiosaiche: Scots Gaelic
  &mdash; Ilya Savistsky: Kumar
  &mdash; Marco Bambini: Gravity
+ &mdash; Rainard Buchmann: TAS Assembler for TR 440
 </p>
 <p>Programs were taken from these Internet sources:</p>
 <p style="font-size:xx-small;font-style:italic;">
