@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="The largest collection of Hello World programs on the Internet.">
 <meta name="author" content="Wolfram Roesler">
-<meta name="date" content="2020-08-20T15:07:20+0200">
+<meta name="date" content="2020-08-20T15:33:18+0200">
 <title>The Hello World Collection</title>
 <link rel="canonical" href="http://helloworldcollection.de">
 <style type="text/css">
@@ -69,6 +69,7 @@
 <a href="#Andl">Andl</a><br>
 <a href="#AngelScript">AngelScript</a><br>
 <a href="#Anguish">Anguish</a><br>
+<b><a href="#Ansible">Ansible</a><br></b>
 <a href="#Ante">Ante</a><br>
 <a href="#APC">APC</a><br>
 <a href="#APL">APL</a><br>
@@ -684,7 +685,7 @@ main() {
 </pre>
 <p>Since then, Hello World has been implemented in just about
 every programming language on the planet. This collection includes
-<b>602 Hello World programs</b>
+<b>603 Hello World programs</b>
 in as many more-or-less well known programming languages, plus
 <b>78 <a href="#Human">human</a> languages</b>.</p>
 <p>The programs in this collection are intended to be as minimal as
@@ -742,6 +743,7 @@ Support the <a href="https://edu.kde.org">KDE Education Project</a> with our exc
 <a href="#Andl">Andl</a>&nbsp;
 <a href="#AngelScript">AngelScript</a>&nbsp;
 <a href="#Anguish">Anguish</a>&nbsp;
+<a href="#Ansible"><b>Ansible</b></a>&nbsp;
 <a href="#Ante">Ante</a>&nbsp;
 <a href="#APC">APC</a>&nbsp;
 <a href="#APL">APL</a>&nbsp;
@@ -1683,6 +1685,19 @@ void main() { print("Hello world\n"); }</pre>
 <p>Hello world in <a href="http://blogs.perl.org/users/zoffix_znet/2016/05/anguish-invisible-programming-language-and-invisible-data-theft.html" target="_blank">Anguish</a>.</p>
 
 <pre>&zwnj;&#65279;&#8291;&zwnj;&#8291;&zwj;&#65279;&#8291;&#8291;&#65279;&#65279;&#65279;&#8289;&#65279;&#8290;&#65279;&#8203;&#8288;&#65279;&zwnj;&zwj;&#8291;&#8291;&zwj;&#8289;&#8289;&#8289;&#8289;&#8289;&#8289;&#8289;&#8289;&zwnj;&#8288;&#8289;&#8289;&#8289;&#8289;&zwnj;&#8288;&#8289;&#8289;&#8288;&#8289;&#8289;&#8289;&#8288;&#8289;&#8289;&#8289;&#8288;&#8289;&#8203;&#8203;&#8203;&#8203;&#8290;&zwj;&#8288;&#8289;&#8288;&#8289;&#8288;&#8290;&#8288;&#8288;&#8289;&zwnj;&#8203;&zwj;&#8203;&#8290;&zwj;&#8288;&#8288;&#8291;&#8288;&#8290;&#8290;&#8290;&#8291;&#8289;&#8289;&#8289;&#8289;&#8289;&#8289;&#8289;&#8291;&#8291;&#8289;&#8289;&#8289;&#8291;&#8288;&#8288;&#8291;&#8203;&#8290;&#8291;&#8203;&#8291;&#8289;&#8289;&#8289;&#8291;&#8290;&#8290;&#8290;&#8290;&#8290;&#8290;&#8291;&#8290;&#8290;&#8290;&#8290;&#8290;&#8290;&#8290;&#8290;&#8291;&#8288;&#8288;&#8289;&#8291;&#8288;&#8289;&#8289;&#8291;</pre>
+<a name="Ansible"></a>
+<table width="100%"><tr>
+<td><h2>Ansible</h2></td>
+<td align="right" width="1%"><small><a href="#index">Back&nbsp;to&nbsp;index</a></small></td>
+</tr></table>
+<pre>---
+- name: Hello world as an <a href="https://en.wikipedia.org/wiki/Ansible_(software)">Ansible</a> Playbook
+  hosts: ansibleclient01.local
+  tasks:
+    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+      copy:
+        content: hello worldn
+        dest: /tmp/testfile.txt</pre>
 <a name="Ante"></a>
 <table width="100%"><tr>
 <td><h2>Ante</h2></td>
@@ -10996,6 +11011,7 @@ Wolfram R&ouml;sler: Founder and maintainer of the Collection
  &mdash; Istv&aacute;n Zachar: Mathematica
  &mdash; John Tromp: Binary Lambda Calculus
  &mdash; info@xtclang.org: Ecstasy
+ &mdash; Leo Podstanicky: Ansible Playbook
 </p>
 <p>Programs were taken from these Internet sources:</p>
 <p style="font-size:xx-small;font-style:italic;">
